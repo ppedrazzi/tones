@@ -1,0 +1,16 @@
+<head>
+  <title>tones</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button id="play">Play Tone</button>
+  <button id="pause">Stop Tone</button>
+  <p>You've played {{counter}} tones.</p>
+  <input id="freqSlider" type="range" min="1000" max="10000" step="100" />
+</template>
